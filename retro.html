@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="retro.css" type="text/css">
+   <script src="retro.js"></script>
+</head>
+<body>
+   <div class='background'>
+    <div class='header'>
+       <img src="" alt="logo" />
+        <div class="project-userid">
+          <h4  class='projectname'>project name</h4>
+          <img src="" alt="logo"/>
+         </div> 
+    </div>
+   
+    <div class="shapes-div">
+      <div class='shapes'> 
+      <div class='box'></div>
+      <div class='circle'></div>
+      <div class='triangle'></div>
+     </div> 
+     <div id="text">
+      <h2>No project Yet</h2>
+   </div>
+     <div class='shapes'> 
+      <div class='box'></div>
+      <div class='circle'></div>
+      <div class='triangle'></div>
+     </div> 
+     
+     </div>
+     <form onsubmit="return emptymsg()"action="retro2nd.html">
+      <div id="background-box-cover">
+           
+            <div id="backgroundbox">
+             <div id=backgroundbox-redcircle></div>
+                <input type="text" id="backgroundbox-input" placeholder="Set A Project Name" onclick="hidemsg()"><br>
+                <div id="emptymsg"><p>Please Add a project Name</p></div>
+               <button id="backgroundbox-button" onclick="emptymsg()" >Let's Go</button>
+                
+            </div>
+            
+            </div> 
+            </form>
+            </div>
+     <button id="addbutton" onclick="projectbox()">
+         click
+      </button>
+    
+</body>
+</html>

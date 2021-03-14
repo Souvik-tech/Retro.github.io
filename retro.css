@@ -1,0 +1,158 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; 
+}
+.background{
+  background-color: rgb(22, 20, 20);
+  height: 100vh;
+  overflow: hidden;
+}
+
+  /*header section*/
+
+
+.header{
+  background-color: rgb(0, 0, 0);
+  height: 45px;
+  width: 100vw;
+  display: flex;  
+  justify-content: space-between;
+}
+
+.project-userid{
+ display: flex;
+ justify-content: space-between;
+}
+.projectname{
+  background-color: rgb(52, 218, 23);
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: 500;
+  margin-left: 300px;
+  margin-top: 8px;  
+}
+
+
+  /*Main-section*/
+
+
+.shapes{
+  position:relative;
+}
+.circle{
+  background: rgb(209, 132, 8);
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin:100px 0px 0px 120px;
+  position: absolute;
+  
+}
+.box{
+  background: rgb(115, 209, 8);
+  width: 120px;
+  height: 120px;
+  border-radius: 20%;
+  
+  margin: 0px 550px 500px 250px;
+  position: absolute;
+ 
+  transform: rotate(-20deg);
+}
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 80px solid transparent;
+  border-right: 80px solid transparent;
+  border-radius: 20px;
+  border-bottom: 100px solid rgb(217, 0, 255);
+  transform:rotate(190deg) ;
+  
+  margin: 1px  20px;
+}
+.shapes-div{
+   display: flex;
+   justify-content: space-around;
+   margin: 250px 150px 250px 100px;
+   
+}
+#text{
+    color: aliceblue;
+    
+   
+    display: flex;
+    
+    width: 150px;
+    
+}
+#addbutton{
+  background-color: rgb(52, 218, 23); 
+  position: absolute;
+  bottom: 30px;
+  right:30px;
+  width: 20px;
+  height: 20px;
+}
+#addbutton:hover{
+  background-color: rgb(5, 143, 5); 
+}
+
+ /*on-click box*/
+
+#background-box-cover{
+  display: flex;
+  visibility: hidden;
+  justify-content: center;
+  align-items: center;
+}
+#backgroundbox{
+  
+  position: absolute;
+    margin-bottom: 600px;
+  height: 300px;
+  width: 500px;
+  background-color: rgba(64, 62, 62, 0.45);
+  backdrop-filter: blur(1px);
+  border-radius: 20px;
+    text-align:center;
+}
+#backgroundbox-redcircle{
+    background: red;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top:10px;
+    right: 10px;   
+}
+#backgroundbox-input{
+    
+    border-top:none;
+    border-right: none;
+    border-left: none;
+    background: none;
+    border-bottom-color: #fa07fa;
+    margin-top:100px;  
+}
+#emptymsg{
+    font-size: 14px;
+    color: white;
+    visibility: hidden;
+}
+#backgroundbox-button{
+    background: rgb(217, 0, 255);
+    border: none;
+    padding: 10px;
+    bottom: 0px;
+    right: 0px;
+    border-radius: 10px;
+     box-shadow: 2px 2px rgba(0, 0, 0, 0.58);
+      position: absolute;
+    bottom: 25px;
+    right: 25px;
+    color: aliceblue;
+   
+}

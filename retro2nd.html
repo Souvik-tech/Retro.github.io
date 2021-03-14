@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="retro2nd.css" type="text/css">
+    <script src="retro.js"></script>
+</head>
+<body>
+   <div class='header'>
+       <img src="" alt="logo" />
+        <div class="project-userid">
+          <h4  class='projectname'>project name</h4>
+          <img src="" alt="logo"/>
+         </div> 
+    </div>
+   
+    <ul class="tab-wrap">
+      <div id="sidemenu">
+        <li>
+           <input type="radio" id="tab-1" name="tab" checked>
+           
+            <label for="tab-1" class='properties-title' id="setupmenutab">SetUp Menu</label>
+            <div class="tab-content">
+              <h4>Screen</h4>
+              <div id="TablecontentitemsSetupmenu">
+               <form >
+                <label for="fname" class="setupmenuheadings">Height:</label>
+                <input type="text" class="contentitems" name="fname"> <br><br>
+                <label for="lname" class="setupmenuheadings">Width:</label>
+                <input type="text" class="contentitems" name="lname"><br><br>
+                <label for="lname" class="setupmenuheadings">Resolution:</label>
+                <input type="text" class="contentitems" name="lname">
+               </form>
+                </div>
+            </div>
+        </li>
+        <li>
+           <input type="radio" id="tab-2" name="tab"  >
+           
+            <label for="tab-2" class="properties-title" id="gameproperties-tab">Game Properties</label>
+            <div class="tab-content">
+                <h4>Screen</h4>
+                 <form>
+                     <div class=gamepropertiestab-headings>
+                      <label for="lname" class="setupmenuheadings">Type:</label>
+                     <input type="text" class="contentitems" name="lname"></div><br>
+                      <div class=gamepropertiestab-headings>
+                      <label for="lname" class="setupmenuheadings">Bitmap Color:</label>
+                     <input type="color" class="contentitems" name="lname" id="bitmap-color"></div>
+                     <div class="container">
+                         <h5>
+                             Global Physics:
+                         </h5>
+                         <label class="Switch">
+                             <input type="checkbox" id="visibleglobalphysics-checkbox" onclick="visibleglobalphysicsitems()">
+                             <span class="Slider"></span>
+                         </label>
+                     </div><br>
+                     <div id="global-physics-items">
+                     <div class=gamepropertiestab-headings>
+                      <label for="lname" class="setupmenuheadings">Gravity:</label>
+                     <input type="text" class="contentitems" name="lname"></div>
+                     <div class="container" id="collison-heading">
+                         <h5>
+                             Collison:
+                         </h5>
+                         <label class="Switch">
+                             <input type="checkbox" id="collisoncheckbox" onclick="visiblecollison()" >
+                             <span class="Slider"></span>
+                         </label>
+                     </div>
+                     </div>
+                      <div id="collison-items">
+                      <label for="lname" class="setupmenuheadings">Collison:</label>
+                     <input type="text" class="contentitems" name="lname">
+                     <label for="lname" class="setupmenuheadings">Damage:</label>
+                     <input type="text" class="contentitems" name="lname">
+                     </div>
+                 </form>
+            </div>
+        </li>
+       </div>
+    </ul>
+    
+   
+</body>
+</html>

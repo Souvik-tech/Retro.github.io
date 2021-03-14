@@ -1,0 +1,167 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   
+}
+body{
+   background: rgb(20, 22, 21);
+}
+.header{
+  background-color: rgb(0, 0, 0);
+  height: 45px;
+  width: 100vw;
+  display: flex;  
+  justify-content: space-between;
+}
+
+.project-userid{
+ display: flex;
+ justify-content: space-between;
+}
+.projectname{
+  background-color: rgb(52, 218, 23);
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: 500;
+  margin-left: 300px;
+  margin-top: 8px;  
+}
+#sidemenu{
+    
+    height: 100vh;
+    width:230px ;
+    
+}
+.tab-wrap{
+    display: flex;
+    
+}
+.tab-wrap input[type='radio']{
+     position: absolute; 
+    top: -9999px;
+    left: -9999px;
+}
+.tab-wrap li{
+    float: left;
+    display: block;
+}
+.tab-wrap .properties-title{
+    background: #212121;
+    display: flex;
+    padding: 5px ;
+    cursor:pointer;
+   
+    color: aliceblue;
+   
+    text-align: center;
+    
+    
+}
+#gameproperties-tab{
+    padding-left: 26px;
+    text-align: center;
+}
+
+.tab-content{
+    background:#212121;
+    padding: 10px;
+    border-radius: 0px 0px 5px 5px;
+    position: absolute;
+    left: 0;
+    top: 73px;
+    width: 230px;
+    height: 100vh;
+    display: none;
+    overflow: hidden;
+    color: aliceblue;
+    
+}
+.tab-wrap input[id^="tab"]:checked+label{
+    background: #bd11d3;
+}
+.tab-wrap input[id^="tab"]:checked ~.tab-content{
+    display: block;
+}
+.contentitems{
+    width:120px;
+    background: none;
+    border-top:none;
+    border-right: none;
+    border-left: none;   
+    background: none;
+border-bottom-color: rgba(193, 180, 193, 0.31);
+}
+#TablecontentitemsSetupmenu{  
+    background: #3d3d3d;
+    border-radius: 5px;
+    height: 40vh;
+    padding: 50px 0 0 10px;
+}
+.gamepropertiestab-headings{
+    background: #3d3d3d;
+    border-radius: 3px;
+    padding: 0px 0 0 10px;
+    font-size: 13px;
+}
+.container{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around
+}
+#bitmap-color{
+    width: 20px;
+}
+.Switch{
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 15px;
+}
+.Slider{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+     background: rgb(20, 22, 21);
+    transition: 0.4s;
+    border-radius: 34px;
+}
+.Switch input{display: none;}
+
+.Slider:before{
+    position: absolute;
+    content: "";
+    height: 12px;
+    width: 11px;
+    top:1.5px;
+    left: 1px;
+    background: white;
+    transition: 0.4s;
+    border-radius: 50px;   
+}
+input:checked+.Slider{
+    background: black;
+}
+input:checked+.Slider:before{
+   transform: translateX(17.2px);
+    background: #bd11d3;
+}
+#global-physics-items{
+    visibility: hidden;
+}
+#collison-heading{
+   
+    border-radius: 3px;
+}
+#collison-items{
+    margin-top: 10px;
+    background:  #3d3d3d;
+    border-radius: 5px;
+   padding: 5px;
+    visibility: hidden;
+}
